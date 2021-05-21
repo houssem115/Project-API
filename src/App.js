@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {Avatar, Button, FormControlLabel, Grid ,Paper, TextField} from'@material-ui/core';
+import AxwInd from './Weather';
 
 function App() {
+  const paperStyle={padding :15 ,height:600 , width:350 , margin:'10px auto',background:'#5e94eb'}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid>
+    <Paper elevation={10} style={paperStyle}>
+    
+<AxwInd/>
+
+    </Paper>
+    </Grid>
   );
 }
 
